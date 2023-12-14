@@ -21,7 +21,7 @@ public class BiletFiyat {
                 return;
             }
 
-            // Uçuş fiyatını hesapla
+            // Uçuş fiyatını hesaplayalım.
             double birimFiyat = 0.10;
             double toplamFiyat = mesafe * birimFiyat;
 
