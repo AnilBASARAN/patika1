@@ -3,17 +3,17 @@ import java.util.Scanner;
 public class BiletFiyat {
 
     public static void main(String[] args) {
-            Scanner scanner = new Scanner(System.in);
+            Scanner input = new Scanner(System.in);
 
             // Kullanıcıdan bilgileri al
             System.out.print("Mesafe (KM): ");
-            int mesafe = scanner.nextInt();
+            int mesafe = input.nextInt();
 
             System.out.print("Yaşınız: ");
-            int yas = scanner.nextInt();
+            int yas = input.nextInt();
 
             System.out.print("Yolculuk Tipi (1: Tek Yön, 2: Gidiş-Dönüş): ");
-           int yolculukTipi = scanner.nextInt();
+           int yolculukTipi = input.nextInt();
 
             // Girdi doğrulama
             if (mesafe <= 0 || yas <= 0 || (yolculukTipi != 1 && yolculukTipi != 2)) {
@@ -42,7 +42,7 @@ public class BiletFiyat {
             System.out.println("Toplam Bilet Fiyatı: " + toplamFiyat + " TL");
 
             // Scanner'ı kapat
-            scanner.close();
+        input.close();
         }
     }
 
